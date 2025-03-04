@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" href="formulir.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Formulir Pendaftaran Mahasiswa</h1>
+    <form action="/submit" method="post" onsubmit="return validateForm()">
+
+        <!-- Nama Lengkap -->
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placholder="Masukkan nama lengkap" required>
+        <div class="error-message" id="error-nama"></div>
+        
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email yang valid" required>
+        <div class="error-message" id="error-email"></div>
+
+        <!-- Password -->
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required>
+        <div class="error-message" id="error-password"></div>
+
+        <!-- Nomor Telepon -->
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon" pattern="[0-9]{10,13}" required>
+        <div class="error-message" id="error-telepon"></div>
+
+        <!-- Jurusan (Select) -->
+        <label for="jurusan">Jurusan:</label>
+        <select id="jurusan" name="jurusan" required>
+            <option value="">-- Pilih Jurusan --</option>
+            <option value="Teknik Informasi">Teknik Informasi</option>
+            <option value="Manajemen">Manajemen</option>
+            <option value="Akuntansi">Akuntansi</option>
+            <option value="Pariwisata">Pariwisata</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Sipil">Teknik Sipil</option>
+            <option value="Arsitektur">Arsitektur</option>
+            <option value="Ilmu Hukum">Ilmu Hukum</option>
+            <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+        </select>
+
+        <!-- Jenis Kelamin (Radio) -->
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+            <input type="radio" id="pria" name="jenis_kelamin" value="pria" required>
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" required>
+            <label for="wanita">Wanita</label>
+        </div>
+
+        <!-- Hobi (Checkbox) -->
+        <label>Hobi:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="membaca" name="hobi" value="membaca">
+            <label for="membaca">Membaca</label>
+            <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" id="musik" name="hobi" value="musik">
+            <label for="musik">Mendengarkan Musik</label>
+        </div>
+
+        <!-- Alamat (Textarea) -->
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap"></textarea>
+
+        <!-- Persetujuan -->
+        <label for="setuju">
+            <input type="checkbox" id="setuju" name="setuju" required>
+            Saya setuju dengan syarat dan ketentuan
+        </label>
+
+        <!-- Tombol Kirim -->
+         <button type="submit">Daftar Sekarang</button>
+    </form>
+    <div class="footer">© 2025 Formulir Pendaftaran | Dibuat </div>
+</div>
+
+</body>
+</html>
