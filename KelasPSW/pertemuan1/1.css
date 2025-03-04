@@ -3,8 +3,3 @@ body {
     background-color: #3f536e;
     font-family: Arial, sans-serif;
 }
-img {
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
