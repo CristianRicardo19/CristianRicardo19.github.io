@@ -14,6 +14,17 @@
             <img src="foto 2.jpg" width="750px" height="500px"> 
         </span>
     </div>
-
+    <audio id="backgroundSound" autoplay>
+        <source src="laugh sound effect.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung tag audio.
+    </audio>
+    <script>
+        window.onload = function() {
+            let audio = document.getElementById("backgroundSound");
+            audio.play().catch(error => {
+                console.log("Autoplay diblokir oleh browser, interaksi pengguna diperlukan.");
+            });
+        };
+    </script>
 </body>
 </html>
