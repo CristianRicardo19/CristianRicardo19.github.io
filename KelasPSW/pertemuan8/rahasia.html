@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAHASIA</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+
+    <div class="marquee">
+        <span>
+            <h1>SUDAH DIBILANG RAHASIA MASIH AJA DICARI</h1>
+            <img src="foto 2.jpg" width="750px" height="500px"> 
+        </span>
+    </div>
+    <audio id="backgroundSound" autoplay>
+        <source src="laugh sound effect.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung tag audio.
+    </audio>
+    <script>
+        window.onload = function() {
+            let audio = document.getElementById("backgroundSound");
+            audio.play().catch(error => {
+                console.log("Autoplay diblokir oleh browser, interaksi pengguna diperlukan.");
+            });
+        };
+    </script>
+</body>
+</html>
