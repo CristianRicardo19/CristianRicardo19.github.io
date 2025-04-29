@@ -10,7 +10,7 @@
 .marquee span {
     display: inline-block;
     padding-left: 100%;
-    animation: marquee 100s linear infinite; /* 2 detik (lebih cepat) */
+    animation: marquee 10s linear infinite; /* 2 detik (lebih cepat) */
 }
 
 @keyframes marquee {
