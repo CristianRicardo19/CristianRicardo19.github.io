@@ -9283,4 +9283,49 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 
-    
+    /* ===== Responsive Tambahan ===== */
+
+/* Ukuran tablet dan HP */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container,
+  .row,
+  .content,
+  .header, 
+  .footer {
+    padding: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar,
+  .menu {
+    flex-direction: column;
+  }
+}
+
+/* Ukuran HP kecil */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .button, .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
