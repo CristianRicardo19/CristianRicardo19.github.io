@@ -17,6 +17,7 @@ body{
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
     color: white;
+    text-align: center;
 }
 header{
     margin-top: 20px;
@@ -34,7 +35,7 @@ header{
 }
 .logo{
     font-size: 3rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 253, 253);
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -53,7 +54,7 @@ nav a{
 nav a:hover,
 nav a.active{
     color: rgb(255, 255, 255);
-    border-bottom: 3px solid rgb(23, 23, 23);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 @media(max-width:995px){
     nav{
@@ -62,11 +63,11 @@ nav a.active{
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid red;
-        border-bottom: 3px solid red;
+        border-left: 3px solid rgb(238, 255, 0);
+        border-bottom: 3px solid rgb(238, 255, 0);
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
-        background-color: #161616;
+        background-color: #ffffff;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
     nav.active{
@@ -81,7 +82,14 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid red;
+        border-bottom: 0.5rem solid rgb(255, 255, 255);
+    }
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
     }
 }
 section{
@@ -125,6 +133,20 @@ span{
 .home-img img:hover{
     font-size: 1.8rem;
     font-weight: 500;
+}
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+    font-size: small;
+}
+
+.home-content h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 .social-icons a{
     display: inline-flex;
@@ -408,7 +430,7 @@ span{
 }
 
 .ranking-table thead {
-    background-color: red;
+    background-color: rgb(243, 243, 243);
 }
 
 .ranking-table th, .ranking-table td {
@@ -418,7 +440,7 @@ span{
 }
 
 .ranking-table tbody tr:hover {
-    background-color: #222;
+    background-color: #f8f8f8;
 }
 
 .table-img {
@@ -430,7 +452,7 @@ span{
 .view-btn {
     display: inline-block;
     padding: 0.5rem 1.2rem;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     color: white;
     border-radius: 0.5rem;
     font-size: 1.4rem;
@@ -438,14 +460,14 @@ span{
 }
 .view-btn:hover {
     background-color: white;
-    color: red;
+    color: rgb(242, 242, 242);
     border: 1px solid red;
 }
 .section-title {
     font-size: 4rem;
     text-align: center;
     margin-bottom: 4rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .education-list {
@@ -462,7 +484,7 @@ span{
 
 .education-item p {
     font-size: 2rem;
-    color: gray;
+    color: rgb(255, 247, 0);
     margin-bottom: 2rem;
 }
 
@@ -485,3 +507,42 @@ iframe {
     height: 400px;
     border: 1px solid #ccc;
   }
+  .container {
+    width: 60%;
+    margin: auto;
+    background-color:   rgb(240, 252, 10);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.profile-img {
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid rgb(255, 0, 0);
+    color:white;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.profile-img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: auto; /* sudut melengkung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+p {
+    font-family: sans-serif;
+    font-style: italic;
+}
